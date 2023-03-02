@@ -17,8 +17,8 @@ const Feed = () => {
       const query = searchQuery(categoryId);
 
       client.fetch(query)
-        .then((date) =>{
-          setPins(date);
+        .then((data) =>{
+          setPins(data);
         })
     }else {
       client.fetch(feedQuery)
@@ -33,7 +33,7 @@ const Feed = () => {
 
   return (
     <div>
-      {pins && <MasonryLayout pins={pins} />}
+      {pins && <MasonryLayout pins={pins}/>}
     </div>
   )
 }

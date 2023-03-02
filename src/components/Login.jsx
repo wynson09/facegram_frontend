@@ -13,7 +13,6 @@ const Login = () => {
 
   function handleCallbackResponse(response) {
     var userObject = jwt_decode(response.credential);
-    console.log(userObject);
 
     localStorage.setItem('user', JSON.stringify(userObject));
 
@@ -29,7 +28,6 @@ const Login = () => {
       .then(() =>{
         navigate('/', {replace: true})
       })
-    console.log(`Here i get ${name} ${sub} ${picture}`);
   }
 
   useEffect(()=>{

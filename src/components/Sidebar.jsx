@@ -7,7 +7,7 @@ import logo from '../assets/logo.png';
 const Sidebar = ({ user, closeToggle }) => {
 
   const isNotActiveStyle = 'flex items-center px-5 gap-3 text-gray-500 hover:text-black transition-all duration-200 ease-in-out capitalize';
-  const isActiveStyle = 'flex items-center px-5 gap-3 font-extrabold border-r-2 border-black transition-all duration-200 ease-in-out capitalize';
+  const isActiveStyle = 'flex items-center px-5 gap-3 text-[#33ccff] font-extrabold border-r-2 border-[#33ccff] transition-all duration-200 ease-in-out capitalize';
 
   const catergories = [
     {name: 'Animals'},
